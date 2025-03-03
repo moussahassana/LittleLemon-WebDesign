@@ -1,0 +1,34 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-columns {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .promo-banner {
+        padding: 15px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .column {
+        margin-bottom: 20px;
+    }
+
+    .promo-banner h1 {
+        font-size: 1.2em;
+    }
+}
