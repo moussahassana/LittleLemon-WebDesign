@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon - Book a Table</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/images/logo.png" alt="Little Lemon Logo" class="logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="book-section">
+            <h1>Book a Table</h1>
+            <p>Reserve your spot at Little Lemon! Fill out the form below, and we'll confirm your booking soon.</p>
+
+            <form class="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+                <button type="submit" class="btn">Submit Booking</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-left">
+                <img src="../assets/images/logo-small.png" alt="Little Lemon Logo" class="small-logo">
+            </div>
+            <div class="footer-right">
+                <p>Copyright Little Lemon</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

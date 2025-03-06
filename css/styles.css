@@ -59,7 +59,10 @@ main {
     padding: 20px;
 }
 
-.promo-banner {
+.promo-banner,
+.menu-section,
+.book-section,
+.about-section {
     background-color: #f4e4bc;
     padding: 30px;
     text-align: center;
@@ -68,7 +71,10 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.promo-banner h1 {
+.promo-banner h1,
+.menu-section h1,
+.book-section h1,
+.about-section h1 {
     color: #fff;
     background-color: #333;
     padding: 10px 20px;
@@ -84,7 +90,7 @@ main {
 
 .column {
     flex: 1;
-    background-color: #F4E5D6;
+    background-color: #fffaf0;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -119,6 +125,44 @@ main {
 }
 
 .btn:hover {
+    background-color: #1b5e20;
+}
+
+/* Booking Form */
+.booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
     background-color: #1b5e20;
 }
 
