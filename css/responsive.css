@@ -1,48 +1,81 @@
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Adjust columns to stack on smaller screens */
     .content-columns {
         flex-direction: column;
     }
 
+    /* Show Hamburger Icon */
     .hamburger {
         display: flex;
+        cursor: pointer;
     }
 
+    /* Navigation Menu */
     .nav-menu {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
         flex-direction: column;
         width: 100%;
         background-color: #333;
         position: absolute;
-        top: 100%;
+        top: 60px;
         left: 0;
+        transform: translateY(-20px);
+        transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
     }
 
+    /* Menu Active State */
     .nav-menu.active {
-        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
     }
 
+    /* Smooth Hamburger to "X" Animation */
+    .hamburger .bar {
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform-origin: center;
+    }
+
+    .hamburger.active .bar1 {
+        transform: rotate(45deg) translate(7.5px, 7.5px);
+    }
+
+    .hamburger.active .bar2 {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar3 {
+        transform: rotate(-45deg) translate(7.5px, -7.5px);
+    }
+
+    /* Center menu items */
     .nav-menu li {
-        margin: 10px 0;
+        margin: 12px 0;
         text-align: center;
     }
 
+    /* Improve promo banner spacing */
     .promo-banner {
         padding: 15px;
     }
 
+    /* Stack footer columns */
     .footer-columns {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
     }
 }
 
 @media (max-width: 480px) {
+    /* Improve column spacing */
     .column {
         margin-bottom: 20px;
     }
 
+    /* Adjust heading size in promo banner */
     .promo-banner h1 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 }
