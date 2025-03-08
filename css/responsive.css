@@ -4,13 +4,27 @@
         flex-direction: column;
     }
 
-    nav ul {
-        flex-direction: column;
-        text-align: center;
+    .hamburger {
+        display: flex;
     }
 
-    nav ul li {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
         margin: 10px 0;
+        text-align: center;
     }
 
     .promo-banner {

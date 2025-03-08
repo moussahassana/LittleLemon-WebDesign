@@ -28,28 +28,44 @@ header {
 nav {
     background-color: #333;
     padding: 10px 0;
+    position: relative;
 }
 
-nav ul {
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-menu {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
+.nav-menu li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-menu li a:hover {
     color: #ddd;
-    transition: color 0.3s ease;
 }
 
 /* Main Content */
