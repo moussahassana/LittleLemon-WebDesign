@@ -56,6 +56,10 @@
         text-align: center;
     }
 
+    .nav-menu li:hover{
+        background-color: rgb(238, 162, 11);
+    }
+
     /* Improve promo banner spacing */
     .promo-banner {
         padding: 15px;

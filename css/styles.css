@@ -68,7 +68,8 @@ nav {
 }
 
 .nav-menu li a:hover {
-    color: #ddd;
+    color: white;
+    text-decoration: none;
 }
 
 /* Main Content */
@@ -136,15 +137,15 @@ main {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2e7d32;
     color: white;
+    background-color: #f4a261;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #1b5e20;
+    background-color: #e76f51;
 }
 
 /* Booking Form */

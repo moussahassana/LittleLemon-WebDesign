@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saveurs du Cameroun</title>
+    <meta name="description" content="Little Lemon offers delicious Mediterranean cuisine with fresh ingredients. Explore our menu and book a table today!">
+    <title>Little Lemon</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
-        <img src="assets/images/logo_header.png" alt="Saveurs du Cameroun Logo" class="logo">
+        <img src="assets/images/logo_header.png" alt="Little Lemon Logo" class="logo">
     </header>
 
-    <nav>
-        <div class="hamburger" id="hamburger">
+    <nav aria-label="Main Navigation">
+        <div class="hamburger" id="hamburger" aria-label="Menu Toggle" role="button" tabindex="0">
             <span class="bar bar1"></span>
             <span class="bar bar2"></span>
             <span class="bar bar3"></span>
         </div>
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="html/menu.html">Menu</a></li>
-            <li><a href="html/book.html">Réserver</a></li>
-            <li><a href="html/about.html">À propos</a></li>
+            <li><a href="html/book.html">Book</a></li>
+            <li><a href="html/about.html">About</a></li>
         </ul>
     </nav>
 
     <main>
-        <section class="promo-banner">
-            <h1>Promo Spéciale : 30% de Réduction ce Week-end !</h1>
-            <p>Découvrez les saveurs authentiques du Cameroun avec des plats traditionnels comme le Ndolé, le Poulet DG et le poisson braisé.</p>
+        <section class="promo-banner" role="region" aria-labelledby="promo-heading">
+            <h1 id="promo-heading">30% Off This Weekend</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et congue massa, eu fringilla mauris. Fusce dapibus vehicula ex at ultricies. Duis at varius ligula. Integer pulvinar tempor quam, et consequat nulla viverra in.</p>
         </section>
 
         <div class="content-columns">
             <article class="column">
-                <img src="assets/images/menu-image.jpg" alt="Ndolé et plantains">
-                <h2>Notre Nouveau Menu</h2>
-                <p>Explorez nos plats inspirés des recettes camerounaises traditionnelles, préparés avec des ingrédients frais et locaux.</p>
-                <a href="html/menu.html" class="btn">Voir le menu</a>
+                <img src="assets/images/menu-image.jpg" alt="Delicious grilled skewers served on a plate" loading="lazy">
+                <h2>Our New Menu</h2>
+                <p>Discover our exciting new dishes, freshly prepared with high-quality ingredients.</p>
+                <a href="html/menu.html" class="btn">See our new menu</a>
             </article>
 
             <article class="column">
-                <img src="assets/images/book-image.jpg" alt="Table de restaurant">
-                <h2>Réservez une Table</h2>
-                <p>Profitez d'une ambiance chaleureuse et conviviale en réservant votre table dès maintenant.</p>
-                <a href="html/book.html" class="btn">Réservez maintenant</a>
+                <img src="assets/images/book-image.jpg" alt="A beautifully served salad dish" loading="lazy">
+                <h2>Book a Table</h2>
+                <p>Secure your spot at our restaurant for an unforgettable dining experience.</p>
+                <a href="html/book.html" class="btn">Book your table now</a>
             </article>
 
             <article class="column">
-                <img src="assets/images/hours-image.jpg" alt="Chef préparant un plat">
-                <h2>Nos Horaires</h2>
-                <p>Lun - Ven : 10h - 22h<br>Sam : 14h - 23h<br>Dim : 14h - 21h</p>
+                <img src="assets/images/hours-image.jpg" alt="A chef preparing meals in the kitchen" loading="lazy">
+                <h2>Opening Hours</h2>
+                <p>We are open all week to serve you the best Mediterranean cuisine.</p>
+                <p>Mon - Fri: 10am - 10pm<br>Sat: 2pm - 11pm<br>Sun: 2pm - 9pm</p>
             </article>
         </div>
     </main>
@@ -58,10 +60,10 @@
     <footer>
         <div class="footer-columns">
             <div class="footer-left">
-                <img src="assets/images/logo-small.png" alt="Saveurs du Cameroun Logo" class="small-logo">
+                <img src="assets/images/logo-small.png" alt="Little Lemon small logo" class="small-logo">
             </div>
             <div class="footer-right">
-                <p>Copyright &copy; Saveurs du Cameroun</p>
+                <p>Copyright &copy; Little Lemon</p>
             </div>
         </div>
     </footer>
